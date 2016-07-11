@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>移动页面模板</title>
+    <!--网页关键词-->
+    <meta name="keywords" content="">
+    <!--网页描述-->
+    <meta name="description" content="">
+    <!--适配当前屏幕-->
+    <!--禁止自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--禁止自动识别邮箱-->
+    <meta name="format-detection" content="email=no" />
+    <!--iphone中safari私有meta标签,
+        允许全屏模式浏览,隐藏浏览器导航栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--iphone中safari顶端的状态条的样式black(黑色)-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script type="text/javascript" src="./public/js/flexible.js"></script>
+    <script type="text/javascript" src="./public/js/flexible_css.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper-3.3.1.min.css">
+    <style type="text/css">
+        @font-face {font-family: 'iconfont';
+            src: url('./public/css/iconfont.eot'); /* IE9*/
+            src: url('./public/css/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./public/css/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('./public/css/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('./public/css/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;}
+
+
+            html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{width: 100%;height: 4.266667rem;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./public/images/下载.png">
+            <input type="text" value="请输入搜索内容"></input>
+        </div>
+    </header>
+    <div class="content">
+        <div class="ip1">
+            <div id="carousel-example-generic1" class="carousel slide ip1_slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic1" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic1" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="./public/images/ip1_1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./public/images/ip1_2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./public/images/ip1_3.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./public/images/ip1_4.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./public/images/ip1_5.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./public/images/ip1_6.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="topnav">
+            	<ul>
+            		<li><span class="litu litua"></span><span>天猫</span></li>
+            		<li><span class="litu litub"></span><span>聚划算</span></li>
+            		<li><span class="litu lituc"></span><span>到家</span></li>
+            		<li><span class="litu litud"></span><span>外卖</span></li>
+            		<li><span class="litu litue"></span><span>充值</span></li>
+            		<li><span class="litu lituf"></span><span>阿里旅行</span></li>
+            		<li><span class="litu litug"></span><span>领金币</span></li>
+            		<li><span class="litu lituh"></span><span>分类</span></li>
+            		<div class="clearfix"></div>
+            	</ul>
+            </div>
+            <div class="topbottom">
+            	<div class="toutiao"></div>
+            	<div class="neirong">宝宝哭了你知道她们的意思吗</div>
+            	<div class=" clearfix"></div>
+            </div>
+        </div>
+        <div class="ip2">
+        	<div class="ip2_left">
+        		<div>
+                    <img src="./public/images/ip2_1.jpg">      
+                </div>
+        	</div>
+        	<div class="ip2_right">
+        		<div class="ip2_right_top">
+                    <img src="./public/images/ip2_a.png" class="imga"> 
+                    <img src="./public/images/ip2_2.jpg" class="imgb">
+                    <div class="clearboth"></div>     
+                </div>
+        		<div class="ip2_right_bottom">
+        			<div><img src="./public/images/ip2_3.jpg"> </div>
+        			<div><img src="./public/images/ip2_4.png"> </div>
+        		</div>
+        	</div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="ip3">
+            <div class="ip3_head">
+                <span class="ip3_head_span"></span>
+                <span class="ip3_head_png"></span>
+                <span class="ip3_head_name">超实惠</span>
+                <span class="ip3_head_span"></span>
+            </div>
+            <div class="ip3_content">
+                <div class="ip3_left">
+                    <img src="./public/images/ip3_1.jpg">
+                    <img src="./public/images/ip3_2.png">
+                </div>
+                <div class="ip3_right">
+                    <div class="clearfix">
+                        <img src="./public/images/ip3_3.png">
+                        <img src="./public/images/ip3_4.png">
+                        <img src="./public/images/ip3_5.png">
+                    </div>
+                    <div class="clearfix">
+                        <img src="./public/images/ip3_6.png">
+                        <img src="./public/images/ip3_7.png">
+                        <img src="./public/images/ip3_8.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!--  好品质 -->
+        <div class="ip4">
+            <div class="ip4_head">
+                <span class="ip4_head_span"></span>
+                <span class="ip4_head_png"></span>
+                <span class="ip4_head_name">好品质</span>
+                <span class="ip4_head_span"></span>
+            </div>
+            <div class="ip4_content">
+                <div class="ip4_top">
+                    <img src="./public/images/ip4_1.png" class="imga">
+                    <img src="./public/images/ip4_2.png" class="imgb">
+                </div>
+                <div class="ip4_bottom">
+                    <img src="./public/images/ip4_3.jpg">
+                    <img src="./public/images/ip4_4.png">
+                    <img src="./public/images/ip4_5.png">
+                    <img src="./public/images/ip4_6.jpg">
+                    <img src="./public/images/ip4_7.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 有特色 -->
+        <div class="ip5">
+            <div class="ip5_head">
+                <span class="ip5_head_span"></span>
+                <span class="ip5_head_png"></span>
+                <span class="ip5_head_name">超实惠</span>
+                <span class="ip5_head_span"></span>
+            </div>
+            <div class="ip5_content">
+                <div class="ip5_left">
+                    <img src="./public/images/ip5_1.png">
+                    <img src="./public/images/ip5_2.png">
+                </div>
+                <div class="ip5_right">
+                    <div class="clearfix">
+                        <img src="./public/images/ip5_3.png">
+                        <img src="./public/images/ip5_4.png">
+                        <img src="./public/images/ip5_5.png">
+                    </div>
+                    <div class="clearfix">
+                        <img src="./public/images/ip5_6.png">
+                        <img src="./public/images/ip5_7.png">
+                        <img src="./public/images/ip5_8.png">
+                    </div>
+                </div>
+            </div>
+            <div class="ip5_footer">
+                <img src="./public/images/ip5_bottom.jpg">
+            </div>
+        </div>
+        
+        <!-- 热门市场 -->
+        <div class="ip6">
+            <div class="ip6_head">
+                <span class="ip6_head_span"></span>
+                <span class="ip6_head_png"></span>
+                <span class="ip6_head_name">热门市场</span>
+                <span class="ip6_head_span"></span>
+            </div>
+            <div class="ip6_content">
+                <div class="ip6_top">
+                    <div>
+                        <span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span>
+                        <img src="./public/images/ip6_1.jpg" class="imga">
+                    </div>
+                    <div>
+                        <span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span>
+                        <img src="./public/images/ip6_2.jpg" class="imgb">
+                    </div>
+                    <i class="clearfix"></i>
+                </div>
+                <div class="ip6_bottom">
+                    <ul>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_3.png"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_4.png"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_5.png"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_6.jpg"></li>
+                        
+                    </ul>
+                    <ul>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_7.jpg"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_8.png"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_9.png"></li>
+                        <li><span class="spana">女装</span>
+                        <span class="spanb">新品推荐</span><img src="./public/images/ip6_10.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ip6_footer">
+                <img src="./public/images/ip6_bottom.png">
+            </div>
+        </div>
+        <div class="ip6_under">
+            <div class="ip6_under_header">
+                <span class="spana">每日好店</span>
+                 <span class="spanc"></span>
+                <span class="spanb">更新43个好店</span>
+                <i class="clearfix"></i>               
+            </div>
+            <div class="ip6_under_ban">
+                <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+            <div class="swiper-slide"><img src="./public/images/ip1_1.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./public/js/swiper-3.3.1.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+    </script>
+            </div>
+        </div>
+
+       <!--  猜你喜欢 -->
+        <div class="ip8">
+            <div  class="con">
+                <div class="hang">
+                    <i class="clearfix"></i>
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_1.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_2.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_3.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_4.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_5.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_6.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_7.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_8.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_9.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_10.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_11.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_12.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_13.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_14.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_15.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_16.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_17.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_18.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_19.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_20.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <i class="clearfix"></i>
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_1.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_2.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_3.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_4.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_5.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_6.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <i class="clearfix"></i>
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_1.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_2.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_3.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_4.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_5.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_6.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_9.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_10.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_11.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_12.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_13.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_14.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="diva">
+                       <div>
+                            <img src="./public/images/ip8_19.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                    <div class="divb">
+                       <div>
+                            <img src="./public/images/ip8_20.jpg">
+                            <span class="intr">为你推荐</span>
+                            <span class="money">￥1699.0</span>
+                       </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        <div class="diva">
+            <ul>
+                <i class="clearfix"></i>
+                <li><span>登录</span></li>
+                <li><span>用户</span></li>
+                <li><span>注册</span></li>
+                <li><span>电脑版</span></li>
+            </ul>           
+        </div>
+       <div class="divb">
+            <span class="spana"></span><span>2016浙 IC2008-21313988 服务中心</span>
+       </div>
+       
+    </footer>
+    <div class="footerfix">
+           <ul class="clearfix">
+            <i class="clearfix"></i>
+               <li><span class="glyphicon glyphicon-home"></span>首页</li>
+               <li><span class="glyphicon glyphicon-object-align-left"></span>物流</li>
+               <li><span class="glyphicon glyphicon-shopping-cart"></span>购物车</li>
+               <li><span class="glyphicon glyphicon-user"></span>我的淘宝</li>
+               <li><span class="glyphicon glyphicon-option-horizontal"></span>查看更多</li>
+           </ul>
+       </div>
+    <script type="text/javascript" src="./public/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./public/js/bootstrap.js"></script>
+</body>
+
+</html>
